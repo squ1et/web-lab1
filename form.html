@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Form page</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </header>
+    <body>
+        <h1>Розробка веб застосунків</h1>
+        <h2>Лабораторна робота №1</h2>
+        <h2>Виконав студент групи АнД-31 Гринчук Олександр</h2>
+        <h3>Варіант №4</h3>
+        <hr />
+        <ul>
+            <li>
+                <a href="index.html">Home page</a>
+            </li>
+        </ul>
+        <hr />
+        <h3>Завдання</h3>
+        <p>Створити сторінку з відображенням таблиці по варіанту</p>
+
+        <form action="" method="POST">
+            <fieldset style="border: 1px solid #000; padding: 10px; margin-bottom: 10px;">
+                <legend>Товар</legend>
+                <label for="productName">Назва товару:</label>
+                <input type="text" id="productName" name="productName" required>
+                <br><br>
+
+                <label for="productType">Тип товару:</label>
+                <select id="productType" name="productType" required>
+                <option value="" disabled selected>Оберіть тип</option>
+                <option value="type1">Продовольчі товари</option>
+                <option value="type2">Техніка</option>
+                <option value="type3">Одяг</option>
+                </select>
+                <br><br>
+
+                <label for="productionDate">Дата виробництва:</label>
+                <input type="date" id="productionDate" name="productionDate" required>
+                <br><br>
+
+                <label for="price">Ціна:</label>
+                <input type="number" id="price" name="price" min="0" step="0.01" required>
+                <br><br>
+
+                <label for="stockQuantity">Кількість на складі:</label>
+                <input type="number" id="stockQuantity" name="stockQuantity" min="1" max="100000" required>
+            </fieldset>
+
+            <fieldset style="border: 1px solid #000; padding: 10px;">
+                <legend>Виробник</legend>
+
+                <label for="manufacturerName">Назва виробника:</label>
+                <input type="text" id="manufacturerName" name="manufacturerName" required>
+                <br><br>
+
+                <label for="manufacturerAddress">Юридична адреса:</label>
+                <input type="text" id="manufacturerAddress" name="manufacturerAddress" required>
+                <br><br>
+
+                <label for="manufacturerEmail">Електронна пошта:</label>
+                <input type="email" id="manufacturerEmail" name="manufacturerEmail" required>
+                <br><br>
+
+                <label for="manufacturerWebsite">Посилання на веб-сайт:</label>
+                <input type="url" id="manufacturerWebsite" name="manufacturerWebsite">
+                <br><br>
+
+                <label for="manufacturerComments">Коментарі:</label>
+                <textarea id="manufacturerComments" name="manufacturerComments" rows="4" cols="40"></textarea>
+            </fieldset>
+
+            <br>
+            <button type="submit">Відправити</button>
+        </form>
+    </body>
+</html>
